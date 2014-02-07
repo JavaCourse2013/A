@@ -1,3 +1,119 @@
 task wrapper(type: Wrapper) {
 	gradleVersion = '1.10'
 }
+
+task list << {
+	numOfJplQ = [16, 18, 12, 6, 2, 5, 3, 0, 4, 5, 3, 2, 6, 9, 0, 11, 5, 0, 2, 11, 7, 14, 3, 3, 0]
+	numOfGuiQ = [4, 4]
+
+	mainDir = new File('main')
+	
+	// # List
+	
+	md = "# List\n"
+	
+	// ## JPL
+	
+	// ### Chapters
+	
+	md += "## JPL\n"
+	
+	for(ch = 1; ch <= numOfJplQ.size(); ch++) {
+		md += "### Chapter " + ch + "\n"
+		
+		if(numOfJplQ[ch - 1] == 0) {
+			md += "No Exercise\n"
+			continue
+		}
+		
+		// Construct table header
+		row = '| |'
+		for(ex = 1; ex <= numOfJplQ[ch - 1]; ex++) {
+			row += "$ex|"
+		}
+		md += row + "\n"
+		
+		// Construct table header splitter
+		row = '|:---:|'
+		for(ex = 1; ex <= numOfJplQ[ch - 1]; ex++) {
+			row += ':---:|'
+		}
+		md += row + "\n"
+		
+		// Construct table body
+		mainDir.eachDir { nameDir ->
+			jplDir = new File(nameDir, 'JPL')
+			chDir = new File(jplDir, String.format('ch%02d', ch))
+			
+			row = '|' + nameDir.name + '|'
+
+			for(ex = 1; ex <= numOfJplQ[ch - 1]; ex++) {
+				exDir = new File(chDir, String.format('ex%02d_%02d', ch, ex));
+				if(exDir.exists()) {
+					// Answer is exst (ex##_## directory is exit and not empty)
+					row += 'o|'
+				} else {
+					// Answer is not exist ex##_## directory is not exit or empty
+					row += 'x|'
+				}
+			}
+			
+			md += row + "\n"
+			
+		}
+	}
+	
+	// ## GUI
+	
+	md += "## GUI\n"
+	
+	// Construct table header
+	row = '||'
+	for(ch = 1; ch <= numOfGuiQ.size(); ch++) {
+		for(ex = 1; ex <= numOfGuiQ[ch - 1]; ex++) {
+			row += String.format('%d_%d|', ch, ex)
+		}
+	}
+	md += row + "\n"
+	
+	// Construct table header splitter
+	row = '|:---:|'
+	for(ch = 1; ch <= numOfGuiQ.size(); ch++) {
+		for(ex = 1; ex <= numOfGuiQ[ch - 1]; ex++) {
+			row += ':---:|'
+		}
+	}
+	md += row + "\n"
+	
+	// Construct table body
+	mainDir.eachDir { nameDir ->
+		guiDir = new File(nameDir, "GUI")
+		
+		row = '|' + nameDir.name + '|'
+		
+		for(ch = 1; ch <= numOfGuiQ.size(); ch++) {
+
+			for(ex = 1; ex <= numOfGuiQ[ch - 1]; ex++) {
+				exDir = new File(guiDir, String.format('%d_%d', ch, ex));
+				if(exDir.exists()) {
+					// Answer is exst (##_## directory is exit and not empty)
+					row += 'o|'
+				} else {
+					// Answer is not exist ##_## directory is not exit or empty
+					row += 'x|'
+				}
+			}
+
+		}
+		
+		md += row + "\n"
+	}
+	
+	// ## Interpret
+	
+	md += "## Interpret\n"
+	
+	// save to list.md
+	listMd = new File('list.md')
+	listMd.write(md)
+}
