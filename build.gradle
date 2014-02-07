@@ -54,7 +54,7 @@ task list << {
 					row += 'o|'
 				} else {
 					// Answer is not exist ex##_## directory is not exit or empty
-					row += 'x|'
+					row += ' |'
 				}
 			}
 			
@@ -100,7 +100,7 @@ task list << {
 					row += 'o|'
 				} else {
 					// Answer is not exist ##_## directory is not exit or empty
-					row += 'x|'
+					row += ' |'
 				}
 			}
 

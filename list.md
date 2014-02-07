@@ -3,185 +3,185 @@
 ### Chapter 1
 | |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
-|kato|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|kato| | | | | | | | | | | | | | | | |
 |shiro|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|sugimoto| | | | | | | | | | | | | | | | |
 ### Chapter 2
 | |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
-|kato|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|kato| | | | | | | | | | | | | | | | | | |
 |shiro|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|sugimoto| | | | | | | | | | | | | | | | | | |
 ### Chapter 3
 | |1|2|3|4|5|6|7|8|9|10|11|12|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|
-|kato|x|x|x|x|x|x|x|x|x|x|x|x|
-|shiro|o|o|o|x|o|o|o|o|o|o|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|x|
+|kato| | | | | | | | | | | | |
+|shiro|o|o|o| |o|o|o|o|o|o| | |
+|sugimoto| | | | | | | | | | | | |
 ### Chapter 4
 | |1|2|3|4|5|6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|
+|aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
-|kato|x|x|x|x|x|x|
-|shiro|o|x|o|o|o|o|
-|sugimoto|x|x|x|x|x|x|
+|kato| | | | | | |
+|shiro|o| |o|o|o|o|
+|sugimoto| | | | | | |
 ### Chapter 5
 | |1|2|
 |:---:|:---:|:---:|
-|aruga|x|x|
+|aruga| | |
 |hasegawa|o|o|
-|kato|x|x|
+|kato| | |
 |shiro|o|o|
-|sugimoto|x|x|
+|sugimoto| | |
 ### Chapter 6
 | |1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|
+|aruga| | | | | |
 |hasegawa|o|o|o|o|o|
-|kato|x|x|x|x|x|
+|kato| | | | | |
 |shiro|o|o|o|o|o|
-|sugimoto|x|x|x|x|x|
+|sugimoto| | | | | |
 ### Chapter 7
 | |1|2|3|
 |:---:|:---:|:---:|:---:|
-|aruga|x|x|x|
+|aruga| | | |
 |hasegawa|o|o|o|
-|kato|x|x|x|
+|kato| | | |
 |shiro|o|o|o|
-|sugimoto|x|x|x|
+|sugimoto| | | |
 ### Chapter 8
 No Exercise
 ### Chapter 9
 | |1|2|3|4|
 |:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|
+|aruga| | | | |
 |hasegawa|o|o|o|o|
-|kato|x|x|x|x|
-|shiro|o|o|o|x|
-|sugimoto|x|x|x|x|
+|kato| | | | |
+|shiro|o|o|o| |
+|sugimoto| | | | |
 ### Chapter 10
 | |1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|
+|aruga| | | | | |
 |hasegawa|o|o|o|o|o|
-|kato|x|x|x|x|x|
+|kato| | | | | |
 |shiro|o|o|o|o|o|
-|sugimoto|x|x|x|x|x|
+|sugimoto| | | | | |
 ### Chapter 11
 | |1|2|3|
 |:---:|:---:|:---:|:---:|
-|aruga|x|x|x|
+|aruga| | | |
 |hasegawa|o|o|o|
-|kato|x|x|x|
-|shiro|o|o|x|
-|sugimoto|x|x|x|
+|kato| | | |
+|shiro|o|o| |
+|sugimoto| | | |
 ### Chapter 12
 | |1|2|
 |:---:|:---:|:---:|
-|aruga|x|x|
+|aruga| | |
 |hasegawa|o|o|
-|kato|x|x|
+|kato| | |
 |shiro|o|o|
-|sugimoto|x|x|
+|sugimoto| | |
 ### Chapter 13
 | |1|2|3|4|5|6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|
+|aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
-|kato|x|x|x|x|x|x|
+|kato| | | | | | |
 |shiro|o|o|o|o|o|o|
-|sugimoto|x|x|x|x|x|x|
+|sugimoto| | | | | | |
 ### Chapter 14
 | |1|2|3|4|5|6|7|8|9|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|x|x|
-|shiro|x|x|x|x|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | |
+|hasegawa| | | | | | | | | |
+|kato| | | | | | | | | |
+|shiro| | | | | | | | | |
+|sugimoto| | | | | | | | | |
 ### Chapter 15
 No Exercise
 ### Chapter 16
 | |1|2|3|4|5|6|7|8|9|10|11|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|x|x|x|x|
-|shiro|x|x|x|x|x|x|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | |
+|hasegawa| | | | | | | | | | | |
+|kato| | | | | | | | | | | |
+|shiro| | | | | | | | | | | |
+|sugimoto| | | | | | | | | | | |
 ### Chapter 17
 | |1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|
-|kato|x|x|x|x|x|
-|shiro|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|
+|aruga| | | | | |
+|hasegawa| | | | | |
+|kato| | | | | |
+|shiro| | | | | |
+|sugimoto| | | | | |
 ### Chapter 18
 No Exercise
 ### Chapter 19
 | |1|2|
 |:---:|:---:|:---:|
-|aruga|x|x|
-|hasegawa|x|x|
-|kato|x|x|
-|shiro|x|x|
-|sugimoto|x|x|
+|aruga| | |
+|hasegawa| | |
+|kato| | |
+|shiro| | |
+|sugimoto| | |
 ### Chapter 20
 | |1|2|3|4|5|6|7|8|9|10|11|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|x|x|x|x|
-|shiro|x|x|x|x|x|x|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | |
+|hasegawa| | | | | | | | | | | |
+|kato| | | | | | | | | | | |
+|shiro| | | | | | | | | | | |
+|sugimoto| | | | | | | | | | | |
 ### Chapter 21
 | |1|2|3|4|5|6|7|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|
-|shiro|x|x|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|
+|aruga| | | | | | | |
+|hasegawa| | | | | | | |
+|kato| | | | | | | |
+|shiro| | | | | | | |
+|sugimoto| | | | | | | |
 ### Chapter 22
 | |1|2|3|4|5|6|7|8|9|10|11|12|13|14|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
-|shiro|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | | | | | | | |
+|hasegawa| | | | | | | | | | | | | | |
+|kato| | | | | | | | | | | | | | |
+|shiro| | | | | | | | | | | | | | |
+|sugimoto| | | | | | | | | | | | | | |
 ### Chapter 23
 | |1|2|3|
 |:---:|:---:|:---:|:---:|
-|aruga|x|x|x|
-|hasegawa|x|x|x|
-|kato|x|x|x|
-|shiro|x|x|x|
-|sugimoto|x|x|x|
+|aruga| | | |
+|hasegawa| | | |
+|kato| | | |
+|shiro| | | |
+|sugimoto| | | |
 ### Chapter 24
 | |1|2|3|
 |:---:|:---:|:---:|:---:|
-|aruga|x|x|x|
-|hasegawa|x|x|x|
-|kato|x|x|x|
-|shiro|x|x|x|
-|sugimoto|x|x|x|
+|aruga| | | |
+|hasegawa| | | |
+|kato| | | |
+|shiro| | | |
+|sugimoto| | | |
 ### Chapter 25
 No Exercise
 ## GUI
 ||1_1|1_2|1_3|1_4|2_1|2_2|2_3|2_4|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga|x|x|x|x|x|x|x|x|
-|hasegawa|x|x|x|x|x|x|x|x|
-|kato|x|x|x|x|x|x|x|x|
-|shiro|o|o|o|x|x|x|x|x|
-|sugimoto|x|x|x|x|x|x|x|x|
+|aruga| | | | | | | | |
+|hasegawa| | | | | | | | |
+|kato| | | | | | | | |
+|shiro|o|o|o| | | | | |
+|sugimoto| | | | | | | | |
 ## Interpret
