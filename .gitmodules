@@ -1,15 +1,15 @@
-[submodule "shiro"]
-	path = shiro
+[submodule "main/shiro"]
+	path = main/shiro
 	url = https://github.com/shrhdk/JavaTraining.git
-[submodule "sugimoto"]
-	path = sugimoto
+[submodule "main/sugimoto"]
+	path = main/sugimoto
 	url = https://github.com/ichihira/JavaTraining.git
-[submodule "hasegawa"]
-	path = hasegawa
+[submodule "main/hasegawa"]
+	path = main/hasegawa
 	url = https://github.com/watagashi78/JavaTraining.git
-[submodule "kato"]
-	path = kato
-	url = https://github.com/mikan/JavaTrainingCourse
-[submodule "aruga"]
-	path = aruga
+[submodule "main/kato"]
+	path = main/kato
+	url = https://github.com/mikan/JavaTrainingCourse.git
+[submodule "main/aruga"]
+	path = main/aruga
 	url = https://github.com/akeboshi/JPL4.git
