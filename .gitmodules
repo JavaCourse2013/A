@@ -13,3 +13,6 @@
 [submodule "main/aruga"]
 	path = main/aruga
 	url = https://github.com/akeboshi/JPL4.git
+[submodule "main/hatanaka"]
+	path = main/hatanaka
+	url = https://github.com/zDpxq6/JPL2013
