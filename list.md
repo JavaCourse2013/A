@@ -5,6 +5,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
+|hatanaka|o| | | | | | | | | | | | | | | |
 |kato| | | | | | | | | | | | | | | | |
 |shiro|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |sugimoto| | | | | | | | | | | | | | | | |
@@ -13,6 +14,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
+|hatanaka| | | | | | | | | | | | | | | | | | |
 |kato| | | | | | | | | | | | | | | | | | |
 |shiro|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |sugimoto| | | | | | | | | | | | | | | | | | |
@@ -21,6 +23,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|
+|hatanaka| | | | | | | | | | | | |
 |kato| | | | | | | | | | | | |
 |shiro|o|o|o| |o|o|o|o|o|o| | |
 |sugimoto| | | | | | | | | | | | |
@@ -29,6 +32,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
+|hatanaka| | | | | | |
 |kato| | | | | | |
 |shiro|o| |o|o|o|o|
 |sugimoto| | | | | | |
@@ -37,6 +41,7 @@
 |:---:|:---:|:---:|
 |aruga| | |
 |hasegawa|o|o|
+|hatanaka| | |
 |kato| | |
 |shiro|o|o|
 |sugimoto| | |
@@ -45,6 +50,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | |
 |hasegawa|o|o|o|o|o|
+|hatanaka| | | | | |
 |kato| | | | | |
 |shiro|o|o|o|o|o|
 |sugimoto| | | | | |
@@ -53,6 +59,7 @@
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |hasegawa|o|o|o|
+|hatanaka| | | |
 |kato| | | |
 |shiro|o|o|o|
 |sugimoto| | | |
@@ -63,6 +70,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | |
 |hasegawa|o|o|o|o|
+|hatanaka| | | | |
 |kato| | | | |
 |shiro|o|o|o| |
 |sugimoto| | | | |
@@ -71,6 +79,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | |
 |hasegawa|o|o|o|o|o|
+|hatanaka| | | | | |
 |kato| | | | | |
 |shiro|o|o|o|o|o|
 |sugimoto| | | | | |
@@ -79,6 +88,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |hasegawa|o|o|o|
+|hatanaka| | | |
 |kato| | | |
 |shiro|o|o| |
 |sugimoto| | | |
@@ -87,6 +97,7 @@ No Exercise
 |:---:|:---:|:---:|
 |aruga| | |
 |hasegawa|o|o|
+|hatanaka| | |
 |kato| | |
 |shiro|o|o|
 |sugimoto| | |
@@ -95,6 +106,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
+|hatanaka| | | | | | |
 |kato| | | | | | |
 |shiro|o|o|o|o|o|o|
 |sugimoto| | | | | | |
@@ -103,6 +115,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | |
 |hasegawa| | | | | | | | | |
+|hatanaka| | | | | | | | | |
 |kato| | | | | | | | | |
 |shiro| | | | | | | | | |
 |sugimoto| | | | | | | | | |
@@ -113,6 +126,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | |
+|hatanaka| | | | | | | | | | | |
 |kato| | | | | | | | | | | |
 |shiro| | | | | | | | | | | |
 |sugimoto| | | | | | | | | | | |
@@ -121,6 +135,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | |
 |hasegawa| | | | | |
+|hatanaka| | | | | |
 |kato| | | | | |
 |shiro| | | | | |
 |sugimoto| | | | | |
@@ -131,6 +146,7 @@ No Exercise
 |:---:|:---:|:---:|
 |aruga| | |
 |hasegawa| | |
+|hatanaka| | |
 |kato| | |
 |shiro| | |
 |sugimoto| | |
@@ -139,6 +155,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | |
+|hatanaka| | | | | | | | | | | |
 |kato| | | | | | | | | | | |
 |shiro| | | | | | | | | | | |
 |sugimoto| | | | | | | | | | | |
@@ -147,6 +164,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | |
 |hasegawa| | | | | | | |
+|hatanaka| | | | | | | |
 |kato| | | | | | | |
 |shiro| | | | | | | |
 |sugimoto| | | | | | | |
@@ -155,6 +173,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | | | | |
+|hatanaka| | | | | | | | | | | | | | |
 |kato| | | | | | | | | | | | | | |
 |shiro| | | | | | | | | | | | | | |
 |sugimoto| | | | | | | | | | | | | | |
@@ -163,6 +182,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |hasegawa| | | |
+|hatanaka| | | |
 |kato| | | |
 |shiro| | | |
 |sugimoto| | | |
@@ -171,17 +191,18 @@ No Exercise
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |hasegawa| | | |
+|hatanaka| | | |
 |kato| | | |
 |shiro| | | |
 |sugimoto| | | |
 ### Chapter 25
 No Exercise
 ## GUI
-||1_1|1_2|1_3|1_4|2_1|2_2|2_3|2_4|
+| |1-1|1-2|1-3|1-4|2-1|2-2|2-3|2-4|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | |
 |hasegawa| | | | | | | | |
+|hatanaka| | | | | | | | |
 |kato| | | | | | | | |
 |shiro|o|o|o| | | | | |
 |sugimoto| | | | | | | | |
-## Interpret
