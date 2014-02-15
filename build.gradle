@@ -2,11 +2,23 @@ task wrapper(type: Wrapper) {
 	gradleVersion = '1.10'
 }
 
+task update << {
+	pull.execute();
+	list.execute();
+}
+
+task pull(type: Exec) {
+	commandLine 'git pull'.split(' ')
+	commandLine 'git submodule foreach git pull origin master'.split(' ')
+}
+
 task list << {
 	def numOfJplQ = [16, 18, 12, 6, 2, 5, 3, 0, 4, 5, 3, 2, 6, 9, 0, 11, 5, 0, 2, 11, 7, 14, 3, 3, 0]
 	def numOfGuiQ = [4, 4]
 	def md = constructListMd(numOfJplQ, numOfGuiQ);
 	new File('list.md').write(md)
+	
+	println 'list.md is generated.'
 }
 
 def constructListMd(numOfJplQ, numOfGuiQ) {
