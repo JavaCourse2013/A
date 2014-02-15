@@ -126,7 +126,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | |
-|hatanaka| | | | | | | | | | | |
+|hatanaka|o|o|o| | | | | | | | |
 |kato| | | | | | | | | | | |
 |shiro| | | | | | | | | | | |
 |sugimoto| | | | | | | | | | | |
@@ -204,5 +204,5 @@ No Exercise
 |hasegawa| | | | | | | | |
 |hatanaka| | | | | | | | |
 |kato| | | | | | | | |
-|shiro|o|o|o| | | | | |
+|shiro|o|o|o|o| | | | |
 |sugimoto| | | | | | | | |
