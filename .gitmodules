@@ -16,3 +16,6 @@
 [submodule "main/hatanaka"]
 	path = main/hatanaka
 	url = https://github.com/zDpxq6/JPL2013
+[submodule "main/nakamura"]
+	path = main/nakamura
+	url = https://github.com/YN111/Java2013.git
