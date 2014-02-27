@@ -25,10 +25,11 @@ list.mdは以下のコマンドで更新することができます。
 ./gradlew list
 ```
 
-list.mdに解答状況を反映させるには以下のディレクトリ構造になっている必要があります。
+list.mdに解答状況を反映させるにはmasterブランチに
+以下のディレクトリ構造で練習問題を配置してください。
 
 ```
-<Your root>/
+<master branch root>/
 JPL
 	chXX
 		exXX_XX		<- この中にソースコード
