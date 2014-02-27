@@ -50,3 +50,4 @@ Interpret			<- この中に16章課題
  * [zDpxq6 (hatanaka)](https://github.com/zDpxq6)
  * [akeboshi (aruga)](https://github.com/akeboshi)
  * kamiya
+ * [1-14j4z1-11 (hayashi)](https://github.com/1-14j4z1-11)
