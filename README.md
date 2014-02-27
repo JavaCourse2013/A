@@ -8,6 +8,8 @@
 
 ```sh
 $ git clone https://github.com/JavaCourse2013/A.git
+$ cd A
+$ git submodule update --init
 ```
 
 更新する場合は以下のコマンドを実行してください。
