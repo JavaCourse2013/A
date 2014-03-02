@@ -273,6 +273,8 @@ No Exercise
 |shiro|o|o|o|o| | | | |
 |sugimoto| | | | | | | | |
 ## Interpret
+|||
+|:---:|:---:|
 |aruga|o|
 |hasegawa| |
 |hatanaka|o|

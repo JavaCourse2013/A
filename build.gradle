@@ -102,6 +102,14 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	
 	md += "## Interpret\n"
 	
+	// Construct table header row
+	row = '|||'
+	md += row + "\n"
+	
+	// Construct table header splitter row
+	row = '|:---:|:---:|'
+	md += row + "\n"
+	
 	// Construct table body
 	for(def name: nameList) {
 		row = "|$name|" + (interpretList[name] ? 'o' : ' ') + '|'
