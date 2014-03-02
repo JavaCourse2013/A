@@ -22,3 +22,6 @@
 [submodule "main/kito"]
 	path = main/kito
 	url = https://github.com/Nkitoh/JavaTraining.git
+[submodule "main/hayashi"]
+	path = main/hayashi
+	url = https://github.com/1-14j4z1-11/Java2013.git

@@ -6,6 +6,7 @@
 |aruga| | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |hatanaka|o| | | | | | | | | | | | | | | |
+|hayashi|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |kato| | | | | | | | | | | | | | | | |
 |kito| | | | | | | | | | | | | | | | |
 |nakamura|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
@@ -17,6 +18,7 @@
 |aruga| | | | | | | | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |hatanaka| | | | | | | | | | | | | | | | | | |
+|hayashi|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |kato| | | | | | | | | | | | | | | | | | |
 |kito| | | | | | | | | | | | | | | | | | |
 |nakamura|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
@@ -28,6 +30,7 @@
 |aruga| | | | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|o|o|
 |hatanaka| | | | | | | | | | | | |
+|hayashi|o|o|o|o|o|o|o|o|o|o|o|o|
 |kato| | | | | | | | | | | | |
 |kito| | | | | | | | | | | | |
 |nakamura|o|o|o|o|o|o|o|o|o|o|o|o|
@@ -39,6 +42,7 @@
 |aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
 |hatanaka| | | | | | |
+|hayashi|o|o|o|o|o|o|
 |kato| | | | | | |
 |kito| | | | | | |
 |nakamura|o|o|o|o|o|o|
@@ -50,6 +54,7 @@
 |aruga| | |
 |hasegawa|o|o|
 |hatanaka| | |
+|hayashi|o|o|
 |kato| | |
 |kito| | |
 |nakamura|o|o|
@@ -61,6 +66,7 @@
 |aruga| | | | | |
 |hasegawa|o|o|o|o|o|
 |hatanaka| | | | | |
+|hayashi|o|o|o|o|o|
 |kato| | | | | |
 |kito| | | | | |
 |nakamura|o|o|o|o|o|
@@ -72,6 +78,7 @@
 |aruga| | | |
 |hasegawa|o|o|o|
 |hatanaka| | | |
+|hayashi|o|o|o|
 |kato| | | |
 |kito| | | |
 |nakamura|o|o|o|
@@ -85,6 +92,7 @@ No Exercise
 |aruga| | | | |
 |hasegawa|o|o|o|o|
 |hatanaka| | | | |
+|hayashi|o|o|o|o|
 |kato| | | | |
 |kito| | | | |
 |nakamura|o|o|o|o|
@@ -96,6 +104,7 @@ No Exercise
 |aruga| | | | | |
 |hasegawa|o|o|o|o|o|
 |hatanaka| | | | | |
+|hayashi|o|o|o|o|o|
 |kato| | | | | |
 |kito| | | | | |
 |nakamura|o|o|o|o|o|
@@ -107,6 +116,7 @@ No Exercise
 |aruga| | | |
 |hasegawa|o|o|o|
 |hatanaka| | | |
+|hayashi|o|o|o|
 |kato| | | |
 |kito| | | |
 |nakamura|o|o|o|
@@ -118,6 +128,7 @@ No Exercise
 |aruga| | |
 |hasegawa|o|o|
 |hatanaka| | |
+|hayashi|o|o|
 |kato| | |
 |kito| | |
 |nakamura|o|o|
@@ -129,6 +140,7 @@ No Exercise
 |aruga| | | | | | |
 |hasegawa|o|o|o|o|o|o|
 |hatanaka| | | | | | |
+|hayashi|o|o|o|o|o|o|
 |kato| | | | | | |
 |kito| | | | | | |
 |nakamura|o|o|o|o|o|o|
@@ -140,10 +152,11 @@ No Exercise
 |aruga| | | | | | | | | | |
 |hasegawa|o|o|o|o|o|o|o|o|o|o|
 |hatanaka| | | | | | | | | | |
+|hayashi| | | | | | | | | | |
 |kato| | | | | | | | | | |
 |kito| | | | | | | | | | |
 |nakamura|o|o|o|o|o|o|o|o|o|o|
-|shiro|o|o|o|o|o|o|o|o|o| |
+|shiro|o|o|o|o|o|o|o|o|o|o|
 |sugimoto| | | | | | | | | | |
 ### Chapter 15
 No Exercise
@@ -153,10 +166,11 @@ No Exercise
 |aruga| | | | | | | | | | | |
 |hasegawa|o|o|o|o|o| | | | | | |
 |hatanaka|o|o|o| | | | | | | | |
+|hayashi| | | | | | | | | | | |
 |kato| | | | | | | | | | | |
 |kito| | | | | | | | | | | |
-|nakamura|o|o|o|o|o| | | |o| | |
-|shiro| | | | | | | | | | | |
+|nakamura|o|o|o|o|o| | | |o| |o|
+|shiro|o|o|o| | | | | | | | |
 |sugimoto| | | | | | | | | | | |
 ### Chapter 17
 | |1|2|3|4|5|
@@ -164,6 +178,7 @@ No Exercise
 |aruga| | | | | |
 |hasegawa| | | | | |
 |hatanaka| | | | | |
+|hayashi| | | | | |
 |kato| | | | | |
 |kito| | | | | |
 |nakamura| | | | | |
@@ -177,6 +192,7 @@ No Exercise
 |aruga| | |
 |hasegawa| | |
 |hatanaka| | |
+|hayashi| | |
 |kato| | |
 |kito| | |
 |nakamura| | |
@@ -188,6 +204,7 @@ No Exercise
 |aruga| | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | |
 |hatanaka| | | | | | | | | | | |
+|hayashi| | | | | | | | | | | |
 |kato| | | | | | | | | | | |
 |kito| | | | | | | | | | | |
 |nakamura| | | | | | | | | | | |
@@ -199,6 +216,7 @@ No Exercise
 |aruga| | | | | | | |
 |hasegawa| | | | | | | |
 |hatanaka| | | | | | | |
+|hayashi| | | | | | | |
 |kato| | | | | | | |
 |kito| | | | | | | |
 |nakamura| | | | | | | |
@@ -210,6 +228,7 @@ No Exercise
 |aruga| | | | | | | | | | | | | | |
 |hasegawa| | | | | | | | | | | | | | |
 |hatanaka| | | | | | | | | | | | | | |
+|hayashi| | | | | | | | | | | | | | |
 |kato| | | | | | | | | | | | | | |
 |kito| | | | | | | | | | | | | | |
 |nakamura| | | | | | | | | | | | | | |
@@ -221,6 +240,7 @@ No Exercise
 |aruga| | | |
 |hasegawa| | | |
 |hatanaka| | | |
+|hayashi| | | |
 |kato| | | |
 |kito| | | |
 |nakamura| | | |
@@ -232,6 +252,7 @@ No Exercise
 |aruga| | | |
 |hasegawa| | | |
 |hatanaka| | | |
+|hayashi| | | |
 |kato| | | |
 |kito| | | |
 |nakamura| | | |
@@ -245,8 +266,9 @@ No Exercise
 |aruga| | | | | | | | |
 |hasegawa|o|o|o|o| | | | |
 |hatanaka| | | | | | | | |
+|hayashi|o|o|o| | | | | |
 |kato| | | | | | | | |
 |kito| | | | | | | | |
-|nakamura|o|o|o| | | | | |
+|nakamura|o|o|o|o| | | | |
 |shiro|o|o|o|o| | | | |
 |sugimoto| | | | | | | | |

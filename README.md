@@ -7,9 +7,7 @@
 初回は以下のコマンドを実行してください。
 
 ```sh
-$ git clone https://github.com/JavaCourse2013/A.git
-$ cd A
-$ git submodule update --init
+$ git clone https://github.com/JavaCourse2013/A.git --recursive
 ```
 
 更新する場合は以下のコマンドを実行してください。
@@ -49,7 +47,8 @@ Interpret			<- この中に16章課題
  * [ichihira (sugimoto)](https://github.com/ichihira)
  * [zDpxq6 (hatanaka)](https://github.com/zDpxq6)
  * [akeboshi (aruga)](https://github.com/akeboshi)
- * kamiya
  * [1-14j4z1-11 (hayashi)](https://github.com/1-14j4z1-11)
  * [YN111 (nakamura)](https://github.com/YN111)
  * [Nkitoh (kito)](https://github.com/Nkitoh)
+ * [ko-haneda (haneda)](https://github.com/ko-haneda)
+ * kamiya
