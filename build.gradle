@@ -25,6 +25,7 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	// Get listdata
 	def jplList = getJplList(numOfJplQ)
 	def guiList = getGuiList(numOfGuiQ)
+	def interpretList = getInterpretList();
 	assert jplList.keySet() == guiList.keySet()
 	def nameList = jplList.keySet()
 	
@@ -99,6 +100,14 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 		md += row + "\n"
 	}
 	
+	md += "## Interpret\n"
+	
+	// Construct table body
+	for(def name: nameList) {
+		row = "|$name|" + (interpretList[name] ? 'o' : ' ') + '|'
+		md += row + "\n"
+	}
+
 	return md
 }
 
@@ -144,4 +153,14 @@ def getGuiList(numOfGuiQ) {
 }
 
 def getInterpretList() {
+	
+	def data = [:]
+	def mainDir = new File('main')
+	mainDir.eachDir { nameDir ->
+		def name = nameDir.name
+		def interpretDir = new File(nameDir, 'Interpret')
+		data[name] = ((interpretDir.exists() && 1 <= interpretDir.list().length))
+	}
+
+	return data
 }

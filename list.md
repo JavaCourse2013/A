@@ -272,3 +272,13 @@ No Exercise
 |nakamura|o|o|o|o| | | | |
 |shiro|o|o|o|o| | | | |
 |sugimoto| | | | | | | | |
+## Interpret
+|aruga|o|
+|hasegawa| |
+|hatanaka|o|
+|hayashi| |
+|kato| |
+|kito| |
+|nakamura|o|
+|shiro| |
+|sugimoto| |
