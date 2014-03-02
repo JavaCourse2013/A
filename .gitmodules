@@ -19,3 +19,6 @@
 [submodule "main/nakamura"]
 	path = main/nakamura
 	url = https://github.com/YN111/Java2013.git
+[submodule "main/kito"]
+	path = main/kito
+	url = https://github.com/Nkitoh/JavaTraining.git

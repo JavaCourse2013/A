@@ -52,3 +52,4 @@ Interpret			<- この中に16章課題
  * kamiya
  * [1-14j4z1-11 (hayashi)](https://github.com/1-14j4z1-11)
  * [YN111 (nakamura)](https://github.com/YN111)
+ * [Nkitoh (kito)](https://github.com/Nkitoh)
