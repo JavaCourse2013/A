@@ -16,7 +16,7 @@ $ git clone https://github.com/JavaCourse2013/A.git --recursive
 $ git submodule foreach git pull origin master
 ```
 
-解答状況は[list.md](list.md)にまとめられています。
+解答状況は[LIST.md](LIST.md)にまとめられています。
 list.mdは以下のコマンドで更新することができます。
 
 ```sh
@@ -51,4 +51,4 @@ Interpret			<- この中に16章課題
  * [YN111 (nakamura)](https://github.com/YN111)
  * [Nkitoh (kito)](https://github.com/Nkitoh)
  * [ko-haneda (haneda)](https://github.com/ko-haneda)
- * kamiya
+ * [RyohKamiya (kamiya)](https://github.com/RyohKamiya)
