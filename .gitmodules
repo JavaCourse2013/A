@@ -25,3 +25,9 @@
 [submodule "main/hayashi"]
 	path = main/hayashi
 	url = https://github.com/1-14j4z1-11/Java2013.git
+[submodule "main/haneda"]
+	path = main/haneda
+	url = https://github.com/ko-haneda/Java2013.git
+[submodule "main/kamiya"]
+	path = main/kamiya
+	url = https://github.com/RyohKamiya/Java2013.git
