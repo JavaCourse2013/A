@@ -174,10 +174,10 @@ No Exercise
 | |1|2|3|4|5|6|7|8|9|10|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | |
-|haneda| | | | | | | | | | |
+|haneda|o| |o|o|o|o|o|o| |o|
 |hasegawa|o|o|o|o|o|o|o|o|o|o|
 |hatanaka| | | | | | | | | | |
-|hayashi|o|o|o|o|o|o|o|o|o| |
+|hayashi|o|o|o|o|o|o|o|o|o|o|
 |kamiya| | | | | | | | | | |
 |kato| | | | | | | | | | |
 |kito| | | | | | | | | | |
@@ -190,7 +190,7 @@ No Exercise
 | |1|2|3|4|5|6|7|8|9|10|11|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | |
-|haneda| | | | | | | | | | | |
+|haneda|o|o|o|o| |o|o|o| |o| |
 |hasegawa|o|o|o|o|o| | | | | | |
 |hatanaka|o|o|o| | | | | | | | |
 |hayashi|o|o|o|o|o| | | |o| | |
@@ -321,12 +321,12 @@ No Exercise
 |:---:|:---:|
 |aruga|o|
 |haneda|o|
-|hasegawa| |
+|hasegawa|o|
 |hatanaka|o|
 |hayashi|o|
-|kamiya| |
+|kamiya|o|
 |kato| |
 |kito| |
 |nakamura|o|
-|shiro| |
+|shiro|o|
 |sugimoto| |
