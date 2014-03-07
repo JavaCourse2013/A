@@ -127,12 +127,29 @@ def getJplList(numOfJplQ) {
 		def name = nameDir.name
 		data[name] = new boolean[numOfJplQ.size()][]
 		def jplDir = new File(nameDir, 'JPL')
+		def jplDir2 = new File(nameDir, 'src/JPL')
+		def jplDir3 = new File(nameDir, 'src/local/JPL')
 		for(def ch = 0; ch < numOfJplQ.size(); ch++) {
 			data[name][ch] = new boolean[numOfJplQ[ch]]
-			def chDir = new File(jplDir, String.format('ch%02d', ch + 1))
+			def chDir = new File(jplDir, String.format('ch%02d', ch + 1)) // shiro
+			def chDir2 = new File(jplDir2, String.format('ch%02d', ch + 1)) // kito
+			def chDir3 = new File(jplDir3, String.format('ch%02d', ch + 1)) // kato
 			for(def ex = 0; ex < numOfJplQ[ch]; ex++) {
-				def exDir = new File(chDir, String.format('ex%02d_%02d', ch + 1, ex + 1))
-				data[name][ch][ex] = ((exDir.exists() && 1 <= exDir.list().length))
+				def exDir = new File(chDir, String.format('ex%02d_%02d', ch + 1, ex + 1)) // shiro
+				def exDir2a = new File(jplDir2, String.format('ex%02d_%02d', ch + 1, ex + 1)) // kito
+				def exDir2b = new File(jplDir2, String.format('ch%02d_%02d', ch + 1, ex + 1)) // kito
+				def exDir3 = new File(chDir3, String.format('ex%02d_%02d', ch + 1, ex + 1)) // kato
+				if (exDir.exists()) {
+					data[name][ch][ex] = ((exDir.exists() && 1 <= exDir.list().length))
+				} else if (chDir2.exists()) {
+					data[name][ch][ex] = ((chDir2.exists() && 1 <= chDir2.list().length))
+				} else if (exDir2a.exists()) {
+					data[name][ch][ex] = ((exDir2a.exists() && 1 <= exDir2a.list().length))
+				} else if (exDir2b.exists()) {
+					data[name][ch][ex] = ((exDir2b.exists() && 1 <= exDir2b.list().length))
+				} else if (exDir3.exists()) {
+					data[name][ch][ex] = ((exDir3.exists() && 1 <= exDir3.list().length))
+				}
 			}
 		}
 	}
@@ -147,12 +164,23 @@ def getGuiList(numOfGuiQ) {
 	mainDir.eachDir { nameDir ->
 		def name = nameDir.name
 		data[name] = new boolean[numOfGuiQ.size()][]
-		def guiDir = new File(nameDir, 'GUI')
+		def guiDir = new File(nameDir, 'GUI') // shiro
+		def guiDir2 = new File(nameDir, 'src/GUI') // kito
+		def guiDir3 = new File(nameDir, 'src/local/GUI') // kato
 		for(def ch = 0; ch < numOfGuiQ.size(); ch++) {
 			data[name][ch] = new boolean[numOfGuiQ[ch]]
 			for(def ex = 0; ex < numOfGuiQ[ch]; ex++) {
-				def exDir = new File(guiDir, String.format('%d_%d', ch + 1, ex + 1))
-				data[name][ch][ex] = ((exDir.exists() && 1 <= exDir.list().length))
+				def exDir = new File(guiDir, String.format('%d_%d', ch + 1, ex + 1)) // shiro
+				def exDir2 = new File(guiDir2, String.format('ex%d_%d', ch + 1, ex + 1)) // kito
+				def exDir3 = new File(guiDir3, String.format('ex%d_%d', ch + 1, ex + 1)) // kato
+				if (exDir.exists()) {
+					data[name][ch][ex] = ((exDir.exists() && 1 <= exDir.list().length))
+				} else if (exDir2.exists()) {
+					data[name][ch][ex] = ((exDir2.exists() && 1 <= exDir2.list().length))
+				} else if (exDir3.exists()) {
+					data[name][ch][ex] = ((exDir3.exists() && 1 <= exDir3.list().length))
+				}
+				
 			}
 		}
 	}
@@ -166,8 +194,16 @@ def getInterpretList() {
 	def mainDir = new File('main')
 	mainDir.eachDir { nameDir ->
 		def name = nameDir.name
-		def interpretDir = new File(nameDir, 'Interpret')
-		data[name] = ((interpretDir.exists() && 1 <= interpretDir.list().length))
+		def interpretDir = new File(nameDir, 'Interpret') // shiro
+		def interpretDir2 = new File(nameDir, 'src/Interpret') // kito
+		def interpretDir3 = new File(nameDir, 'src/local/Interpret') // kato
+		if (interpretDir.exists()) {
+			data[name] = ((interpretDir.exists() && 1 <= interpretDir.list().length))		
+		} else if (interpretDir2.exists()) {
+			data[name] = ((interpretDir2.exists() && 1 <= interpretDir2.list().length))	
+		} else if (interpretDir3.exists()) {
+			data[name] = ((interpretDir3.exists() && 1 <= interpretDir3.list().length))	
+		}
 	}
 
 	return data
