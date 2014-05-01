@@ -13,7 +13,33 @@ task pull(type: Exec) {
 }
 
 task list << {
-	def numOfJplQ = [16, 18, 12, 6, 2, 5, 3, 0, 4, 5, 3, 2, 6, 10, 0, 11, 5, 0, 2, 11, 7, 14, 3, 3, 0]
+	def numOfJplQ = [
+		 1 : 1..16,
+		 2 : 1..18,
+		 3 : 1..12,
+		 4 : 1..6,
+		 5 : 1..2,
+		 6 : 1..5,
+		 7 : 1..3,
+		 8 : [],
+		 9 : 1..4,
+		10 : 1..5,
+		11 : 1..3,
+		12 : 1..2,
+		13 : 1..6,
+		14 : 1..10,
+		15 : [],
+		16 : (1..11) - [6, 7, 8, 10],
+		17 : 1..5,
+		18 : [],
+		19 : 1..2,
+		20 : 1..11,
+		21 : 1..7,
+		22 : 1..14,
+		23 : 1..3,
+		24 : 1..3,
+		25 : []
+	];
 	def numOfGuiQ = [4, 4]
 	def md = constructListMd(numOfJplQ, numOfGuiQ);
 	new File('list.md').write(md)
@@ -36,38 +62,39 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 
 	md += "## JPL\n"
 
-	for(def ch = 0; ch < numOfJplQ.size(); ch++) {
+	numOfJplQ.each { ch, exs ->
 				
-		md += "### Chapter ${ch+1}\n"
+		md += "### Chapter ${ch}\n"
 		
-		if(numOfJplQ[ch] < 1) {
+		if(exs.size() < 1) {
 			md += "No Exercise\n"
-			continue
-		}
-		
-		// Construct table header row
-		row = '| |'
-		for(def ex = 0; ex < numOfJplQ[ch]; ex++) {
-			row += "${ex + 1}|"
-		}
-		md += row + "\n"
-		
-		// Construct table header splitter row
-		row = '|:---:|'
-		for(def ex = 0; ex < numOfJplQ[ch]; ex++) {
-			row += ':---:|'
-		}
-		md += row + "\n"
-		
-		// Construct table body
-		for(def name: nameList) {
-			row = "|$name|"
-			for(def ex = 0; ex < numOfJplQ[ch]; ex++) {
-				row +=  (jplList[name][ch][ex] ? 'o' : ' ') + '|'
+		} else {
+			// Construct table header row
+			row = '| |'
+			exs.each { ex ->
+				row += "${ex}|"
 			}
 			md += row + "\n"
+			
+			// Construct table header splitter row
+			row = '|:---:|'
+			exs.each {
+				row += ':---:|'
+			}
+			md += row + "\n"
+			
+			// Construct table body
+			nameList.each { name ->
+				row = "|$name|"
+				exs.each { ex ->
+					row += (jplList[name][ch][ex] ? 'o' : ' ') + '|'
+				}
+				md += row + "\n"
+			}
 		}
+		md += "\n"
 	}
+	md += "\n"
 	
 	md += "## GUI\n"
 	
@@ -99,6 +126,7 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 		}
 		md += row + "\n"
 	}
+	md += "\n"
 	
 	md += "## Interpret\n"
 	
@@ -115,6 +143,7 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 		row = "|$name|" + (interpretList[name] ? 'o' : ' ') + '|'
 		md += row + "\n"
 	}
+	md += "\n"
 
 	return md
 }
@@ -125,20 +154,20 @@ def getJplList(numOfJplQ) {
 	def mainDir = new File('main')
 	mainDir.eachDir { nameDir ->
 		def name = nameDir.name
-		data[name] = new boolean[numOfJplQ.size()][]
+		data[name] = []
 		def jplDir = new File(nameDir, 'JPL')
 		def jplDir2 = new File(nameDir, 'src/JPL')
 		def jplDir3 = new File(nameDir, 'src/local/JPL')
-		for(def ch = 0; ch < numOfJplQ.size(); ch++) {
-			data[name][ch] = new boolean[numOfJplQ[ch]]
-			def chDir = new File(jplDir, String.format('ch%02d', ch + 1)) // shiro
-			def chDir2 = new File(jplDir2, String.format('ch%02d', ch + 1)) // kito
-			def chDir3 = new File(jplDir3, String.format('ch%02d', ch + 1)) // kato
-			for(def ex = 0; ex < numOfJplQ[ch]; ex++) {
-				def exDir = new File(chDir, String.format('ex%02d_%02d', ch + 1, ex + 1)) // shiro
-				def exDir2a = new File(jplDir2, String.format('ex%02d_%02d', ch + 1, ex + 1)) // kito
-				def exDir2b = new File(jplDir2, String.format('ch%02d_%02d', ch + 1, ex + 1)) // kito
-				def exDir3 = new File(chDir3, String.format('ex%02d_%02d', ch + 1, ex + 1)) // kato
+		numOfJplQ.each { ch, exs ->
+			data[name][ch] = []
+			def chDir = new File(jplDir, String.format('ch%02d', ch)) // shiro
+			def chDir2 = new File(jplDir2, String.format('ch%02d', ch)) // kito
+			def chDir3 = new File(jplDir3, String.format('ch%02d', ch)) // kato
+			exs.each { ex ->
+				def exDir = new File(chDir, String.format('ex%02d_%02d', ch, ex)) // shiro
+				def exDir2a = new File(jplDir2, String.format('ex%02d_%02d', ch, ex)) // kito
+				def exDir2b = new File(jplDir2, String.format('ch%02d_%02d', ch, ex)) // kito
+				def exDir3 = new File(chDir3, String.format('ex%02d_%02d', ch, ex)) // kato
 				if (exDir.exists()) {
 					data[name][ch][ex] = ((exDir.exists() && 1 <= exDir.list().length))
 				} else if (chDir2.exists()) {
