@@ -42,7 +42,7 @@
 |kato|o|o|o|o|o|o|o|o|o|o|o|o|
 |kito|o|o|o|o|o|o|o|o|o|o|o|o|
 |nakamura|o|o|o|o|o|o|o|o|o|o|o|o|
-|shiro|o|o|o| |o|o|o|o|o|o| | |
+|shiro|o|o|o|o|o|o|o|o|o|o| |o|
 |sugimoto| | | | | | | | | | | | |
 
 ### Chapter 4
@@ -57,7 +57,7 @@
 |kato|o|o|o|o|o|o|
 |kito|o|o|o|o|o|o|
 |nakamura|o|o|o|o|o|o|
-|shiro|o| |o|o|o|o|
+|shiro|o|o|o|o|o|o|
 |sugimoto| | | | | | |
 
 ### Chapter 5
@@ -273,7 +273,7 @@ No Exercise
 |hatanaka| | | | | | | |
 |hayashi| | | | | | | |
 |kamiya| | | | | | | |
-|kato| | | | | | | |
+|kato|o|o|o|o|o|o|o|
 |kito| | | | | | | |
 |nakamura|o|o| |o| |o|o|
 |shiro| | | | | | | |
@@ -288,7 +288,7 @@ No Exercise
 |hatanaka| | | | | | | | | | | | | | |
 |hayashi| | | | | | | | | | | | | | |
 |kamiya| | | | | | | | | | | | | | |
-|kato| | | | | | | | | | | | | | |
+|kato|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |kito| | | | | | | | | | | | | | |
 |nakamura|o|o|o|o|o|o|o|o| |o|o|o| |o|
 |shiro| | | | | | | | | | | | | | |
@@ -333,7 +333,7 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | |
 |haneda| | | | | | | | |
-|hasegawa|o|o|o|o| | | | |
+|hasegawa|o|o|o|o|o| | | |
 |hatanaka| | | | | | | | |
 |hayashi|o|o|o|o| | | | |
 |kamiya| | | | | | | | |

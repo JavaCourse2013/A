@@ -13,10 +13,12 @@ $ git clone https://github.com/JavaCourse2013/A.git --recursive
 更新する場合は以下のコマンドを実行してください。
 
 ```sh
-$ git submodule foreach git pull origin master
+$ git pull
+$ git submodule foreach git fetch --all
+$ git submodule foreach git reset --hard origin/master
 ```
 
-解答状況は[LIST.md](LIST.md)にまとめられています。
+解答状況は[list.md](list.md)にまとめられています。
 list.mdは以下のコマンドで更新することができます。
 
 ```sh
