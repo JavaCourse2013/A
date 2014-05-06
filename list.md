@@ -261,7 +261,7 @@ No Exercise
 |kato|o|o|o|o|o|o|o|o|o|o|o|
 |kito|o|o|o|o|o| |o| |o|o|o|
 |nakamura|o|o|o|o|o|o|o|o|o|o|o|
-|shiro|o|o|o|o| | | | | | | |
+|shiro|o|o|o|o|o|o|o|o|o|o|o|
 |sugimoto|o|o|o|o|o|o|o|o|o|o|o|
 
 ### Chapter 21
@@ -269,30 +269,30 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | |
 |haneda| | | | | | | |
-|hasegawa| | | | | | | |
+|hasegawa|o|o| |o|o| |o|
 |hatanaka| | | | | | | |
 |hayashi| | | | | | | |
 |kamiya| | | | | | | |
 |kato|o|o|o|o|o|o|o|
 |kito| | | | | | | |
-|nakamura|o|o| |o| |o|o|
-|shiro| | | | | | | |
-|sugimoto| | | | | | | |
+|nakamura|o|o|o|o|o|o|o|
+|shiro|o| | |o|o|o|o|
+|sugimoto|o|o|o|o|o|o|o|
 
 ### Chapter 22
 | |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | | | | |
 |haneda| | | | | | | | | | | | | | | |
-|hasegawa| | | | | | | | | | | | | | | |
+|hasegawa|o| | | | | | | | | | | | | | |
 |hatanaka| | | | | | | | | | | | | | | |
 |hayashi| | | | | | | | | | | | | | | |
 |kamiya| | | | | | | | | | | | | | | |
 |kato|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |kito| | | | | | | | | | | | | | | |
-|nakamura|o|o|o|o|o|o|o|o|o|o|o|o| |o|o|
-|shiro| | | | | | | | | | | | | | | |
-|sugimoto| | | | | | | | | | | | | | | |
+|nakamura|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
+|shiro|o|o|o|o|o|o| | | | | | | | | |
+|sugimoto|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 
 ### Chapter 23
 | |1|2|3|
