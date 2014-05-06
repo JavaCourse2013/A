@@ -202,19 +202,19 @@ No Exercise
 No Exercise
 
 ### Chapter 16
-| |1|2|3|4|5|9|11|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga| | | | | | | |
-|haneda|o|o|o|o| | | |
-|hasegawa|o|o|o|o|o| | |
-|hatanaka| | | | | | | |
-|hayashi|o|o|o|o|o|o| |
-|kamiya| | | | | | | |
-|kato|o|o|o|o|o|o| |
-|kito|o|o|o|o|o| | |
-|nakamura|o|o|o|o|o|o|o|
-|shiro|o|o|o|o|o| | |
-|sugimoto|o|o|o|o|o|o|o|
+| |1|2|3|4|5|9|11|12|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|aruga| | | | | | | | |
+|haneda|o|o|o|o| | | | |
+|hasegawa|o|o|o|o|o| | | |
+|hatanaka| | | | | | | | |
+|hayashi|o|o|o|o|o|o| | |
+|kamiya| | | | | | | | |
+|kato|o|o|o|o|o|o| | |
+|kito|o|o|o|o|o| | | |
+|nakamura|o|o|o|o|o|o|o|o|
+|shiro|o|o|o|o|o| | | |
+|sugimoto|o|o|o|o|o|o|o|o|
 
 ### Chapter 17
 | |1|2|3|4|5|
@@ -280,19 +280,19 @@ No Exercise
 |sugimoto| | | | | | | |
 
 ### Chapter 22
-| |1|2|3|4|5|6|7|8|9|10|11|12|13|14|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|aruga| | | | | | | | | | | | | | |
-|haneda| | | | | | | | | | | | | | |
-|hasegawa| | | | | | | | | | | | | | |
-|hatanaka| | | | | | | | | | | | | | |
-|hayashi| | | | | | | | | | | | | | |
-|kamiya| | | | | | | | | | | | | | |
-|kato|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
-|kito| | | | | | | | | | | | | | |
-|nakamura|o|o|o|o|o|o|o|o| |o|o|o| |o|
-|shiro| | | | | | | | | | | | | | |
-|sugimoto| | | | | | | | | | | | | | |
+| |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|aruga| | | | | | | | | | | | | | | |
+|haneda| | | | | | | | | | | | | | | |
+|hasegawa| | | | | | | | | | | | | | | |
+|hatanaka| | | | | | | | | | | | | | | |
+|hayashi| | | | | | | | | | | | | | | |
+|kamiya| | | | | | | | | | | | | | | |
+|kato|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
+|kito| | | | | | | | | | | | | | | |
+|nakamura|o|o|o|o|o|o|o|o|o|o|o|o| |o|o|
+|shiro| | | | | | | | | | | | | | | |
+|sugimoto| | | | | | | | | | | | | | | |
 
 ### Chapter 23
 | |1|2|3|
@@ -339,7 +339,7 @@ No Exercise
 |kamiya| | | | | | | | |
 |kato|o|o|o|o|o| | | |
 |kito| | | |o| | | | |
-|nakamura|o|o|o|o| | | | |
+|nakamura|o|o|o|o|o| | | |
 |shiro|o|o|o|o|o|o|o|o|
 |sugimoto| | | | | | | | |
 
