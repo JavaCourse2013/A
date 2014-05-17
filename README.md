@@ -1,4 +1,4 @@
-# Java Cource 2013 Team A
+# Java Course 2013 Team A
 
 ## Summary
 
