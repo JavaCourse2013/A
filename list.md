@@ -120,7 +120,7 @@ No Exercise
 |kato|o|o|o|o|
 |kito|o|o|o|o|
 |nakamura|o|o|o|o|
-|shiro|o|o|o| |
+|shiro|o|o|o|o|
 |sugimoto| | | | |
 
 ### Chapter 10
@@ -172,7 +172,7 @@ No Exercise
 | |1|2|3|4|5|6|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | |
-|haneda|o|o|o| |o|o|
+|haneda|o|o|o|o|o|o|
 |hasegawa|o|o|o|o|o|o|
 |hatanaka| | | | | | |
 |hayashi|o|o|o|o|o|o|
@@ -187,7 +187,7 @@ No Exercise
 | |1|2|3|4|5|6|7|8|9|10|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | |
-|haneda|o| |o|o|o|o|o|o| |o|
+|haneda|o|o|o|o|o|o|o|o|o|o|
 |hasegawa|o|o|o|o|o|o|o|o|o|o|
 |hatanaka| | | | | | | | | | |
 |hayashi|o|o|o|o|o|o|o|o|o|o|
@@ -205,15 +205,15 @@ No Exercise
 | |1|2|3|4|5|9|11|12|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | |
-|haneda|o|o|o|o| | | | |
+|haneda|o|o|o|o|o|o| | |
 |hasegawa|o|o|o|o|o| | | |
 |hatanaka| | | | | | | | |
-|hayashi|o|o|o|o|o|o| | |
+|hayashi|o|o|o|o|o|o|o|o|
 |kamiya| | | | | | | | |
-|kato|o|o|o|o|o|o| | |
+|kato|o|o|o|o|o|o|o| |
 |kito|o|o|o|o|o| | | |
 |nakamura|o|o|o|o|o|o|o|o|
-|shiro|o|o|o|o|o| | | |
+|shiro|o|o|o|o|o|o| | |
 |sugimoto|o|o|o|o|o|o|o|o|
 
 ### Chapter 17
@@ -221,14 +221,14 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | |
 |haneda|o|o|o| | |
-|hasegawa|o|o| | | |
+|hasegawa|o|o|o| | |
 |hatanaka| | | | | |
 |hayashi|o|o| | | |
 |kamiya| | | | | |
 |kato|o|o|o|o|o|
 |kito|o|o| | | |
 |nakamura|o|o|o|o|o|
-|shiro|o|o| | | |
+|shiro|o|o|o|o|o|
 |sugimoto|o|o|o|o|o|
 
 ### Chapter 18
@@ -271,7 +271,7 @@ No Exercise
 |haneda| | | | | | | |
 |hasegawa|o|o| |o|o| |o|
 |hatanaka| | | | | | | |
-|hayashi| | | | | | | |
+|hayashi|o|o| |o| | |o|
 |kamiya| | | | | | | |
 |kato|o|o|o|o|o|o|o|
 |kito| | | | | | | |
@@ -284,9 +284,9 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | | | | | | | | |
 |haneda| | | | | | | | | | | | | | | |
-|hasegawa|o| | | | | | | | | | | | | | |
+|hasegawa|o|o|o| | | | | | |o| | | |o| |
 |hatanaka| | | | | | | | | | | | | | | |
-|hayashi| | | | | | | | | | | | | | | |
+|hayashi|o|o|o|o|o|o|o|o| | |o|o|o|o|o|
 |kamiya| | | | | | | | | | | | | | | |
 |kato|o|o|o|o|o|o|o|o|o|o|o|o|o|o|o|
 |kito| | | | | | | | | | | | | | | |
@@ -299,30 +299,30 @@ No Exercise
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |haneda| | | |
-|hasegawa| | | |
+|hasegawa|o|o|o|
 |hatanaka| | | |
-|hayashi| | | |
+|hayashi|o|o|o|
 |kamiya| | | |
-|kato| | | |
+|kato|o|o|o|
 |kito| | | |
-|nakamura| | | |
-|shiro| | | |
-|sugimoto| | | |
+|nakamura|o|o|o|
+|shiro|o|o|o|
+|sugimoto|o|o|o|
 
 ### Chapter 24
 | |1|2|3|
 |:---:|:---:|:---:|:---:|
 |aruga| | | |
 |haneda| | | |
-|hasegawa| | | |
+|hasegawa|o|o|o|
 |hatanaka| | | |
-|hayashi| | | |
+|hayashi|o|o|o|
 |kamiya| | | |
-|kato| | | |
+|kato|o|o|o|
 |kito| | | |
-|nakamura| | | |
-|shiro| | | |
-|sugimoto| | | |
+|nakamura|o|o|o|
+|shiro|o| | |
+|sugimoto|o|o|o|
 
 ### Chapter 25
 No Exercise
@@ -333,13 +333,13 @@ No Exercise
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |aruga| | | | | | | | |
 |haneda| | | | | | | | |
-|hasegawa|o|o|o|o|o| | | |
+|hasegawa|o|o|o|o|o|o|o| |
 |hatanaka| | | | | | | | |
-|hayashi|o|o|o|o| | | | |
+|hayashi|o|o|o|o|o|o|o| |
 |kamiya| | | | | | | | |
-|kato|o|o|o|o|o| | | |
+|kato|o|o|o|o|o|o|o| |
 |kito| | | |o| | | | |
-|nakamura|o|o|o|o|o| | | |
+|nakamura|o|o|o|o|o|o|o| |
 |shiro|o|o|o|o|o|o|o|o|
 |sugimoto| | | | | | | | |
 
