@@ -15,16 +15,16 @@ task pull(type: Exec) {
 }
 
 task list << {
-	def md = constructListMd(NUM_OF_JPL_EX, NUM_OF_GUI_EX);
+	def md = constructListMd(JPL_EX, GUI_EX);
 	new File('list.md').write(md)
 	
 	println 'list.md is generated.'
 }
 
-def constructListMd(numOfJplQ, numOfGuiQ) {
+def constructListMd(jplEx, guiEx) {
 	// Get listdata
-	def jplList = getJplList(numOfJplQ)
-	def guiList = getGuiList(numOfGuiQ)
+	def jplList = getJplList(jplEx)
+	def guiList = getGuiList(guiEx)
 	def interpretList = getInterpretList();
 	assert jplList.keySet() == guiList.keySet()
 	def nameList = jplList.keySet()
@@ -36,7 +36,7 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 
 	md += "## JPL\n"
 
-	numOfJplQ.each { ch, exs ->
+    jplEx.each { ch, exs ->
 				
 		md += "### Chapter ${ch}\n"
 		
@@ -74,8 +74,8 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	
 	// Construct table header row
 	row = '| |'
-	for(def ch = 0; ch < numOfGuiQ.size(); ch++) {
-		for(def ex = 0; ex < numOfGuiQ[ch]; ex++) {
+	for(def ch = 0; ch < guiEx.size(); ch++) {
+		for(def ex = 0; ex < guiEx[ch]; ex++) {
 			row += "${ch + 1}-${ex + 1}|"
 		}
 	}
@@ -83,8 +83,8 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	
 	// Construct table header splitter row
 	row = '|:---:|'
-	for(def ch = 0; ch < numOfGuiQ.size(); ch++) {
-		for(def ex = 0; ex < numOfGuiQ[ch]; ex++) {
+	for(def ch = 0; ch < guiEx.size(); ch++) {
+		for(def ex = 0; ex < guiEx[ch]; ex++) {
 			row += ':---:|'
 		}
 	}
@@ -93,8 +93,8 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	// Construct table body
 	for(def name: nameList) {
 		row = "|$name|"
-		for(def ch = 0; ch < numOfGuiQ.size(); ch++) {
-			for(def ex = 0; ex < numOfGuiQ[ch]; ex++) {
+		for(def ch = 0; ch < guiEx.size(); ch++) {
+			for(def ex = 0; ex < guiEx[ch]; ex++) {
 				row +=  (guiList[name][ch][ex] ? 'o' : ' ') + '|'
 			}
 		}
@@ -122,7 +122,7 @@ def constructListMd(numOfJplQ, numOfGuiQ) {
 	return md
 }
 
-def getJplList(numOfJplQ) {
+def getJplList(jplEx) {
 
 	def data = [:]
 	def mainDir = new File('main')
@@ -132,7 +132,7 @@ def getJplList(numOfJplQ) {
 		def jplDir = new File(nameDir, 'JPL')
 		def jplDir2 = new File(nameDir, 'src/JPL')
 		def jplDir3 = new File(nameDir, 'src/local/JPL')
-		numOfJplQ.each { ch, exs ->
+		jplEx.each { ch, exs ->
 			data[name][ch] = []
 			def chDir = new File(jplDir, String.format('ch%02d', ch)) // shiro
 			def chDir2 = new File(jplDir2, String.format('ch%02d', ch)) // kito
@@ -160,19 +160,19 @@ def getJplList(numOfJplQ) {
 	return data
 }
 
-def getGuiList(numOfGuiQ) {
+def getGuiList(guiEx) {
 	
 	def data = [:]
 	def mainDir = new File('main')
 	mainDir.eachDir { nameDir ->
 		def name = nameDir.name
-		data[name] = new boolean[numOfGuiQ.size()][]
+		data[name] = new boolean[guiEx.size()][]
 		def guiDir = new File(nameDir, 'GUI') // shiro
 		def guiDir2 = new File(nameDir, 'src/GUI') // kito
 		def guiDir3 = new File(nameDir, 'src/local/GUI') // kato
-		for(def ch = 0; ch < numOfGuiQ.size(); ch++) {
-			data[name][ch] = new boolean[numOfGuiQ[ch]]
-			for(def ex = 0; ex < numOfGuiQ[ch]; ex++) {
+		for(def ch = 0; ch < guiEx.size(); ch++) {
+			data[name][ch] = new boolean[guiEx[ch]]
+			for(def ex = 0; ex < guiEx[ch]; ex++) {
 				def exDir = new File(guiDir, String.format('%d_%d', ch + 1, ex + 1)) // shiro
 				def exDir2 = new File(guiDir2, String.format('ex%d_%d', ch + 1, ex + 1)) // kito
 				def exDir3 = new File(guiDir3, String.format('ex%d_%d', ch + 1, ex + 1)) // kato
