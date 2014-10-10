@@ -1,4 +1,4 @@
-def NUM_OF_JPL_EX = [
+def JPL_EX = [
         1 : 1..16,
         2 : 1..18,
         3 : 1..12,
@@ -26,4 +26,4 @@ def NUM_OF_JPL_EX = [
         25: []
 ]
 
-def NUM_OF_GUI_EX = [2, 4]
+def GUI_EX = [2, 4]
