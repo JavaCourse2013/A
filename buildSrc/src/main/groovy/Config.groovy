@@ -1,3 +1,17 @@
+def TRAINEE = [
+        'aruga',
+        'haneda',
+        'hasegawa',
+        'hatanaka',
+        'hayashi',
+        'kamiya',
+        'kato',
+        'kito',
+        'nakamura',
+        'shiro',
+        'sugimoto'
+]
+
 def JPL_EX = [
         1 : 1..16,
         2 : 1..18,
