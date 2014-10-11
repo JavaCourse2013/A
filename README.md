@@ -18,14 +18,14 @@ $ git submodule foreach git fetch --all
 $ git submodule foreach git reset --hard origin/master
 ```
 
-解答状況は[list.md](list.md)にまとめられています。
-list.mdは以下のコマンドで更新することができます。
+解答状況は[list.html](http://htmlpreview.github.io/?https://github.com/JavaCourse2013/A/blob/master/list.html)にまとめられています。
+`list.html`は以下のコマンドで更新することができます。
 
 ```sh
 ./gradlew list
 ```
 
-list.mdに解答状況を反映させるにはmasterブランチに
+`list.html`に解答状況を反映させるにはmasterブランチに
 以下のディレクトリ構造で練習問題を配置してください。
 
 ```
@@ -40,6 +40,11 @@ GUI
 	...
 Interpret			<- この中に16章課題
 ```
+
+この構造に従わない場合は、
+インタフェース[Resolver](buildSrc/src/main/groovy/Resolver.groovy)を`YournameResolver`として実装してください。
+[DefaultResolver](buildSrc/src/main/groovy/DefaultResolver.groovy)が参考になります。
+実装は`buildSrc/src/main/groovy/YournameResolver.groovy`として配置してください。
 
 ## Questionnaire
 
