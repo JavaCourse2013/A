@@ -1,0 +1,10 @@
+sourceSets {
+    main {
+        groovy {
+            srcDirs = [
+                    'src/main/groovy',
+                    'src/main/custom-resolver',
+            ]
+        }
+    }
+}
