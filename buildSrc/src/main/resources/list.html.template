@@ -6,13 +6,18 @@
         <% if(CSS != null) print "<style>$CSS</style>" %>
     </head>
     <body>
+        <%
+            def badge = '<img alt="passed" src="img/java-coffee.svg" class="emoji" />'
+            def ok = '<img alt="ok" src="img/coffee-bean.svg" class="emoji" />'
+            def ng = ''
+        %>
         <h1>List of Progress</h1>
 
         <h2>Summary</h2>
 
         <table>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
+            <tr><th>${name}${0.9 <= SUMMARY[name] ? badge : ''}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
             <% } // name %>
         </table>
 
@@ -27,7 +32,7 @@
         <table>
             <tr><th></th><% exercises.each { ex -> print "<th>$ex</th>" } %></tr>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}</th><% exercises.each { ex -> print "<td>${JPL_LIST[name][ch][ex] ? 'o' : ' '}</td>" } %></tr>
+            <tr><th>${name}</th><% exercises.each { ex -> print "<td>${JPL_LIST[name][ch][ex] ? ok : ng}</td>" } %></tr>
             <% } // name %>
         </table>
 
@@ -38,7 +43,7 @@
         <table>
             <tr><th></th><% GUI_EX.each { ch, exercises -> exercises.each { ex -> print "<th>$ch-$ex</th>" } } %></tr>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}</th><% GUI_EX.each { ch, exercises -> exercises.each { ex -> print "<td>${GUI_LIST[name][ch][ex] ? 'o' : ' '}</td>" } } %></tr>
+            <tr><th>${name}</th><% GUI_EX.each { ch, exercises -> exercises.each { ex -> print "<td>${GUI_LIST[name][ch][ex] ? ok : ng}</td>" } } %></tr>
             <% } // name %>
         </table>
 
@@ -46,7 +51,7 @@
 
         <table>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}</th><td>${INTERPRET_LIST[name] ? 'o' : ' '}</td></tr>
+            <tr><th>${name}</th><td>${INTERPRET_LIST[name] ? ok : ng}</td></tr>
             <% } // name %>
         </table>
     </body>
