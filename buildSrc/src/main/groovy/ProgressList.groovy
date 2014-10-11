@@ -86,12 +86,19 @@ class ProgressList {
     }
 
     String getHTML() {
+        // Load HTML template & CSS from resources
         String templateText = getClass().getResource('list.html.template').text
         String cssText = getClass().getResource('style.css').text
+
+        // Load emoji as Data URI Scheme from resources
+        String iconBadge = HtmlHelper.getDataUriScheme('image/svg+xml', getClass().getResourceAsStream('java-coffee.svg'))
+        String iconOk = HtmlHelper.getDataUriScheme('image/svg+xml', getClass().getResourceAsStream('coffee-bean.svg'))
 
         SimpleTemplateEngine engine = new SimpleTemplateEngine()
         Writable template = engine.createTemplate(templateText).make([
                 CSS           : cssText,
+                ICON_BADGE    : iconBadge,
+                ICON_OK       : iconOk,
                 TRAINEES      : Config.TRAINEES,
                 JPL_EX        : Config.JPL_EX,
                 GUI_EX        : Config.GUI_EX,
@@ -110,7 +117,6 @@ class ProgressList {
             Class<?> resolverClass = Class.forName("${name.capitalize()}Resolver")
             return resolverClass.newInstance()
         } catch (Exception e) {
-            // Return the default resolver
             return new DefaultResolver()
         }
     }

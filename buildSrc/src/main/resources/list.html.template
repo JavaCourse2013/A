@@ -4,11 +4,27 @@
         <meta charset="utf-8">
         <title>List of Progress</title>
         <% if(CSS != null) print "<style>$CSS</style>" %>
+        <style>
+            span.emoji {
+                text-indent: -9999px;
+                width: 1.5em;
+                height: 1.5em;
+                display: inline-block;
+            }
+            span.badge {
+                background: url("${ICON_BADGE}");
+                background-size: 100%;
+            }
+            span.ok {
+                background: url("${ICON_OK}");
+                background-size: 100%;
+            }
+        </style>
     </head>
     <body>
         <%
-            def badge = '<img alt="passed" src="img/java-coffee.svg" class="emoji" />'
-            def ok = '<img alt="ok" src="img/coffee-bean.svg" class="emoji" />'
+            def badge = '<span title="passed" class="badge emoji" />'
+            def ok = '<span title="ok" class="ok emoji" />'
             def ng = ''
         %>
         <h1>List of Progress</h1>
@@ -17,7 +33,7 @@
 
         <table>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}${0.9 <= SUMMARY[name] ? badge : ''}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
+            <tr><th>${name}${0.9 <= SUMMARY[name] ? ' ' + badge : ''}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
             <% } // name %>
         </table>
 
