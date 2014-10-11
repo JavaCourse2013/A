@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List of Progress</title>
+    </head>
+    <body>
+        <h1>List of Progress</h1>
+
+        <h2>JPL</h2>
+
+        <% JPL_EX.each { ch, exercises -> %>
+
+        <h3>Chapter ${ch}</h3>
+
+        <% if(exercises.size() == 0) { print 'No Exercise'; return }  %>
+
+        <table border="1">
+            <tr><th></th><% exercises.each { ex -> print "<th>$ex</th>" } %></tr>
+            <% TRAINEES.each { name -> %>
+            <tr><th>${name}</th><% exercises.each { ex -> print "<td>${JPL_LIST[name][ch][ex] ? 'o' : ' '}</td>" } %></tr>
+            <% } // name %>
+        </table>
+
+        <% } // ch, exercises %>
+
+        <h2>GUI</h2>
+
+        <table border="1">
+            <tr><th></th><% GUI_EX.each { ch, exercises -> exercises.each { ex -> print "<th>$ch-$ex</th>" } } %></tr>
+            <% TRAINEES.each { name -> %>
+            <tr><th>${name}</th><% GUI_EX.each { ch, exercises -> exercises.each { ex -> print "<td>${GUI_LIST[name][ch][ex] ? 'o' : ' '}</td>" } } %></tr>
+            <% } // name %>
+        </table>
+
+        <h2>Interpret</h2>
+
+        <table border="1">
+            <% TRAINEES.each { name -> %>
+            <tr><th>${name}</th><td>${INTERPRET_LIST[name] ? 'o' : ' '}</td></tr>
+            <% } // name %>
+        </table>
+    </body>
+</html>
