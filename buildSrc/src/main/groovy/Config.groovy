@@ -45,4 +45,25 @@ class Config {
             1: 1..4,
             2: 2..4
     ]
+
+    static TOTAL
+    static TOTAL_OF_JPL
+    static TOTAL_OF_GUI
+    static TOTAL_OF_INTERPRET
+
+    static {
+        TOTAL_OF_JPL = 0
+        Config.JPL_EX.each { ch, exercises ->
+            TOTAL_OF_JPL += exercises.size()
+        }
+
+        TOTAL_OF_GUI = 0
+        Config.GUI_EX.each { ch, exercises ->
+            TOTAL_OF_GUI += exercises.size()
+        }
+
+        TOTAL_OF_INTERPRET = 1
+
+        TOTAL = TOTAL_OF_JPL + TOTAL_OF_GUI + TOTAL_OF_INTERPRET
+    }
 }

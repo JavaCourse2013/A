@@ -7,7 +7,40 @@ class ProgressList {
         this.baseDir = baseDir
     }
 
-    def getJplList() { // boolean jplList[name][ch][ex]
+    def getSummary() { // 0 ~ 1 int data[name]
+        def jplList = getJplList()
+        def guiList = getGuiList()
+        def interpretList = getInterpretList()
+
+        def summary = [:]
+
+        Config.TRAINEES.each { name ->
+            def total = 0
+
+            Config.JPL_EX.each { ch, exercises ->
+                exercises.each { ex ->
+                    if (jplList[name][ch][ex])
+                        total++
+                }
+            }
+
+            Config.GUI_EX.each { ch, exercises ->
+                exercises.each { ex ->
+                    if (guiList[name][ch][ex])
+                        total++
+                }
+            }
+
+            if (interpretList[name])
+                total++
+
+            summary[name] = total / Config.TOTAL
+        }
+
+        return summary
+    }
+
+    def getJplList() { // boolean data[name][ch][ex]
         def data = [:]
         Config.TRAINEES.each { name ->
             File userDir = new File(baseDir, name)
@@ -16,7 +49,7 @@ class ProgressList {
             Config.JPL_EX.each { ch, exercises ->
                 data[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = exist(resolver.getJplDir(userDir, ch, ex));
+                    data[name][ch][ex] = exist(resolver.getJplDir(userDir, ch, ex))
                 }
             }
         }
@@ -24,7 +57,7 @@ class ProgressList {
         return data
     }
 
-    def getGuiList() { // boolean guiList[name][ch][ex]
+    def getGuiList() { // boolean data[name][ch][ex]
         def data = [:]
         Config.TRAINEES.each { name ->
             File userDir = new File(baseDir, name)
@@ -33,7 +66,7 @@ class ProgressList {
             Config.JPL_EX.each { ch, exercises ->
                 data[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = exist(resolver.getGuiDir(userDir, ch, ex));
+                    data[name][ch][ex] = exist(resolver.getGuiDir(userDir, ch, ex))
                 }
             }
         }
@@ -41,12 +74,12 @@ class ProgressList {
         return data
     }
 
-    def getInterpretList() {    // boolean interpretList[name]
+    def getInterpretList() {    // data interpretList[name]
         def data = [:]
         Config.TRAINEES.each { name ->
             File userDir = new File(baseDir, name)
             Resolver resolver = getResolver(name)
-            data[name] = exist(resolver.getInterpretDir(userDir));
+            data[name] = exist(resolver.getInterpretDir(userDir))
         }
 
         return data
@@ -62,6 +95,7 @@ class ProgressList {
                 TRAINEES      : Config.TRAINEES,
                 JPL_EX        : Config.JPL_EX,
                 GUI_EX        : Config.GUI_EX,
+                SUMMARY       : getSummary(),
                 JPL_LIST      : getJplList(),
                 GUI_LIST      : getGuiList(),
                 INTERPRET_LIST: getInterpretList()
