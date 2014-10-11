@@ -16,7 +16,7 @@ class ProgressList {
             Config.JPL_EX.each { ch, exercises ->
                 data[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = hasFile(resolver.getJplDir(userDir, ch, ex));
+                    data[name][ch][ex] = exist(resolver.getJplDir(userDir, ch, ex));
                 }
             }
         }
@@ -33,7 +33,7 @@ class ProgressList {
             Config.JPL_EX.each { ch, exercises ->
                 data[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = hasFile(resolver.getGuiDir(userDir, ch, ex));
+                    data[name][ch][ex] = exist(resolver.getGuiDir(userDir, ch, ex));
                 }
             }
         }
@@ -46,7 +46,7 @@ class ProgressList {
         Config.TRAINEES.each { name ->
             File userDir = new File(baseDir, name)
             Resolver resolver = getResolver(name)
-            data[name] = hasFile(resolver.getInterpretDir(userDir));
+            data[name] = exist(resolver.getInterpretDir(userDir));
         }
 
         return data
@@ -78,8 +78,11 @@ class ProgressList {
         }
     }
 
-    static hasFile(File dir) {
-        def files = dir.list()
+    static exist(File file) {
+        if(file.isFile())
+            return true
+
+        def files = file.list()
         return files != null && 1 <= files.length
     }
 }

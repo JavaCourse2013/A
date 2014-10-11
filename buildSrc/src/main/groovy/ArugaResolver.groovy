@@ -1,4 +1,5 @@
 class ArugaResolver implements Resolver {
+
     @Override
     File getJplDir(File baseDir, int ch, int ex) {
         return new File(baseDir, String.format("JPL/src/JPL/ch%02d/ex%<02d_%02d", ch, ex))
@@ -6,7 +7,7 @@ class ArugaResolver implements Resolver {
 
     @Override
     File getGuiDir(File baseDir, int ch, int ex) {
-        return new File(baseDir, "GUI/src/GUI/${ch}_${ex}")
+        return new File(baseDir, String.format("GUI/src/GUI/ex%02d_%02d", ch, ex))
     }
 
     @Override
