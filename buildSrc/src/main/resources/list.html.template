@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>List of Progress</title>
+        <% if(CSS != null) print "<style>$CSS</style>" %>
     </head>
     <body>
         <h1>List of Progress</h1>

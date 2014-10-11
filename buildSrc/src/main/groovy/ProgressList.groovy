@@ -53,9 +53,12 @@ class ProgressList {
     }
 
     String getHTML() {
+        String templateText = getClass().getResource('list.html.template').text
+        String cssText = getClass().getResource('style.css').text
+
         SimpleTemplateEngine engine = new SimpleTemplateEngine()
-        String templateText = getClass().getResource('list.template').text
         Writable template = engine.createTemplate(templateText).make([
+                CSS           : cssText,
                 TRAINEES      : Config.TRAINEES,
                 JPL_EX        : Config.JPL_EX,
                 GUI_EX        : Config.GUI_EX,
@@ -79,7 +82,7 @@ class ProgressList {
     }
 
     static exist(File file) {
-        if(file.isFile())
+        if (file.isFile())
             return true
 
         def files = file.list()
