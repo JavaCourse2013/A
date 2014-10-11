@@ -44,7 +44,7 @@ Interpret			<- この中に16章課題
 この構造に従わない場合は、
 インタフェース[Resolver](buildSrc/src/main/groovy/Resolver.groovy)を`YournameResolver`として実装してください。
 [DefaultResolver](buildSrc/src/main/groovy/DefaultResolver.groovy)が参考になります。
-実装は`buildSrc/src/main/groovy/YournameResolver.groovy`として配置してください。
+実装は`buildSrc/src/main/custom-resolver/YournameResolver.groovy`として配置してください。
 
 ## Questionnaire
 
