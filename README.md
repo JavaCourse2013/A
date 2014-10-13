@@ -10,19 +10,17 @@
 $ git clone https://github.com/JavaCourse2013/A.git --recursive
 ```
 
-更新する場合は以下のコマンドを実行してください。
+サブモジュールを更新する場合は以下のコマンドを実行してください。
 
 ```sh
-$ git pull
-$ git submodule foreach git fetch --all
-$ git submodule foreach git reset --hard origin/master
+$ ./gradlew update
 ```
 
 解答状況は[list.html](http://htmlpreview.github.io/?https://github.com/JavaCourse2013/A/blob/master/list.html)にまとめられています。
 `list.html`は以下のコマンドで更新することができます。
 
 ```sh
-./gradlew list
+$ ./gradlew list
 ```
 
 `list.html`に解答状況を反映させるにはmasterブランチに

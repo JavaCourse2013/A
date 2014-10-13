@@ -2,22 +2,18 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.1'
 }
 
-task update << {
-    pull.execute()
-    list.execute()
+task fetch(type: Exec) {
+    workingDir projectDir
+    commandLine 'git submodule foreach git fetch --all'.split(' ')
 }
 
-task pull(type: Exec) {
-    commandLine 'git pull'.split(' ')
-    commandLine 'git submodule foreach git pull origin master'.split(' ')
-    commandLine 'git submodule foreach git fetch --all'.split(' ')
+task update(type: Exec, dependsOn: fetch) {
+    workingDir projectDir
     commandLine 'git submodule foreach git reset --hard origin/master'.split(' ')
 }
 
 task list << {
-    def progressList = new ProgressList(new File('main'))
-    def html = progressList.getHTML();
-    new File('list.html').write(html)
-
-    println 'list.html is generated.'
+    ProgressList progressList = new ProgressList(new File('main'))
+    String html = progressList.getHTML()
+    File list = new File('list.html').write(html)
 }
