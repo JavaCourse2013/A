@@ -6,25 +6,24 @@
         <% if(CSS != null) print "<style>$CSS</style>" %>
         <style>
             span.emoji {
-                text-indent: -9999px;
                 width: 1.5em;
                 height: 1.5em;
                 display: inline-block;
+                background-repeat: no-repeat;
+                background-size: contain;
             }
             span.badge {
-                background: url("${ICON_BADGE}");
-                background-size: 100%;
+                background-image: url("${ICON_BADGE}");
             }
             span.ok {
-                background: url("${ICON_OK}");
-                background-size: 100%;
+                background-image: url("${ICON_OK}");
             }
         </style>
     </head>
     <body>
         <%
-            def badge = '<span title="passed" class="badge emoji" />'
-            def ok = '<span title="ok" class="ok emoji" />'
+            def badge = '<span title="passed" class="emoji badge" />'
+            def ok = '<span title="ok" class="emoji ok" />'
             def ng = ''
         %>
         <h1>List of Progress</h1>
