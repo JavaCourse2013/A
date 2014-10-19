@@ -51,7 +51,7 @@ class ProgressList {
             Config.JPL_EX.each { ch, exercises ->
                 jplList[name][ch] = [:]
                 exercises.each { ex ->
-                    jplList[name][ch][ex] = exists(resolver.getJplDir(userDir, ch, ex))
+                    jplList[name][ch][ex] = exists(resolver.resolveJplDir(userDir, ch, ex))
                 }
             }
 
@@ -59,11 +59,11 @@ class ProgressList {
             Config.GUI_EX.each { ch, exercises ->
                 guiList[name][ch] = [:]
                 exercises.each { ex ->
-                    guiList[name][ch][ex] = exists(resolver.getGuiDir(userDir, ch, ex))
+                    guiList[name][ch][ex] = exists(resolver.resolveGuiDir(userDir, ch, ex))
                 }
             }
 
-            interpretList[name] = exists(resolver.getInterpretDir(userDir))
+            interpretList[name] = exists(resolver.resolveInterpretDir(userDir))
         }
     }
 

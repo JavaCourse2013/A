@@ -1,5 +1,5 @@
 interface Resolver {
-    File getJplDir(File baseDir, int ch, int ex)
-    File getGuiDir(File baseDir, int ch, int ex)
-    File getInterpretDir(File baseDir)
+    File resolveJplDir(File baseDir, int ch, int ex)
+    File resolveGuiDir(File baseDir, int ch, int ex)
+    File resolveInterpretDir(File baseDir)
 }
