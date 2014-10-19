@@ -12,18 +12,20 @@
                 background-repeat: no-repeat;
                 background-size: contain;
             }
-            span.badge {
-                background-image: url("${ICON_BADGE}");
+        </style>
+        <style>
+            span.coffee {
+                background-image: url("${EMOJI['coffee']}");
             }
-            span.ok {
-                background-image: url("${ICON_OK}");
+            span.coffee-bean {
+                background-image: url("${EMOJI['coffee-bean']}");
             }
         </style>
     </head>
     <body>
         <%
-            def badge = '<span title="passed" class="emoji badge" />'
-            def ok = '<span title="ok" class="emoji ok" />'
+            def passed = '<span title="passed" class="emoji coffee" />'
+            def ok = '<span title="ok" class="emoji coffee-bean" />'
             def ng = ''
         %>
         <h1>List of Progress</h1>
@@ -32,7 +34,7 @@
 
         <table>
             <% TRAINEES.each { name -> %>
-            <tr><th>${name}${0.9 <= SUMMARY[name] ? ' ' + badge : ''}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
+            <tr><th>${name}${0.9 <= SUMMARY[name] ? ' ' + passed : ''}</th><td><progress value="${SUMMARY[name]}" /></td><td>${(int)(SUMMARY[name] * 100)}%</td></tr>
             <% } // name %>
         </table>
 

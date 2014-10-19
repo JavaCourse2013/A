@@ -8,3 +8,12 @@ sourceSets {
         }
     }
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.jyaml:jyaml:1.3'
+}
