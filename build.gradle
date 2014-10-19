@@ -14,6 +14,5 @@ task update(type: Exec, dependsOn: fetch) {
 
 task list << {
     ProgressList progressList = new ProgressList(new File('main'))
-    String html = progressList.getHTML()
-    File list = new File('list.html').write(html)
+    new File('list.html').write(progressList.html)
 }

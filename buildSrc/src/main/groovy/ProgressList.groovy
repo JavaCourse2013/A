@@ -3,17 +3,21 @@ import groovy.text.SimpleTemplateEngine
 class ProgressList {
     File baseDir
 
+    def jplList = [:]
+    def guiList = [:]
+    def interpretList = [:]
+
+    Map<String, Double> summary = [:]
+    String html
+
     ProgressList(File baseDir) {
         this.baseDir = baseDir
+        updateList()
+        updateSummary()
+        updateHtml()
     }
 
-    def getSummary() { // 0 ~ 1 int data[name]
-        def jplList = getJplList()
-        def guiList = getGuiList()
-        def interpretList = getInterpretList()
-
-        def summary = [:]
-
+    private void updateSummary() { // 0 ~ 1 int data[name]
         Config.TRAINEES.each { name ->
             def total = 0
 
@@ -36,56 +40,34 @@ class ProgressList {
 
             summary[name] = total / Config.TOTAL
         }
-
-        return summary
     }
 
-    def getJplList() { // boolean data[name][ch][ex]
-        def data = [:]
+    private void updateList() {
         Config.TRAINEES.each { name ->
             File userDir = new File(baseDir, name)
             Resolver resolver = getResolver(name)
-            data[name] = [:]
+
+            jplList[name] = [:]
             Config.JPL_EX.each { ch, exercises ->
-                data[name][ch] = [:]
+                jplList[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = exist(resolver.getJplDir(userDir, ch, ex))
+                    jplList[name][ch][ex] = exists(resolver.getJplDir(userDir, ch, ex))
                 }
             }
-        }
 
-        return data
-    }
-
-    def getGuiList() { // boolean data[name][ch][ex]
-        def data = [:]
-        Config.TRAINEES.each { name ->
-            File userDir = new File(baseDir, name)
-            Resolver resolver = getResolver(name)
-            data[name] = [:]
-            Config.JPL_EX.each { ch, exercises ->
-                data[name][ch] = [:]
+            guiList[name] = [:]
+            Config.GUI_EX.each { ch, exercises ->
+                guiList[name][ch] = [:]
                 exercises.each { ex ->
-                    data[name][ch][ex] = exist(resolver.getGuiDir(userDir, ch, ex))
+                    guiList[name][ch][ex] = exists(resolver.getGuiDir(userDir, ch, ex))
                 }
             }
-        }
 
-        return data
+            interpretList[name] = exists(resolver.getInterpretDir(userDir))
+        }
     }
 
-    def getInterpretList() {    // data interpretList[name]
-        def data = [:]
-        Config.TRAINEES.each { name ->
-            File userDir = new File(baseDir, name)
-            Resolver resolver = getResolver(name)
-            data[name] = exist(resolver.getInterpretDir(userDir))
-        }
-
-        return data
-    }
-
-    String getHTML() {
+    private void updateHtml() {
         // Load HTML template & CSS from resources
         String templateText = getClass().getResource('list.html.template').text
         String cssText = getClass().getResource('style.css').text
@@ -102,16 +84,16 @@ class ProgressList {
                 TRAINEES      : Config.TRAINEES,
                 JPL_EX        : Config.JPL_EX,
                 GUI_EX        : Config.GUI_EX,
-                SUMMARY       : getSummary(),
-                JPL_LIST      : getJplList(),
-                GUI_LIST      : getGuiList(),
-                INTERPRET_LIST: getInterpretList()
+                SUMMARY       : summary,
+                JPL_LIST      : jplList,
+                GUI_LIST      : guiList,
+                INTERPRET_LIST: interpretList
         ])
 
-        return template.toString()
+        html = template.toString()
     }
 
-    static Resolver getResolver(String name) {
+    private static Resolver getResolver(String name) {
         try {
             // Try to get the custom resolver
             Class<?> resolverClass = Class.forName("${name.capitalize()}Resolver")
@@ -121,7 +103,7 @@ class ProgressList {
         }
     }
 
-    static exist(File file) {
+    private static boolean exists(File file) {
         if (file.isFile())
             return true
 
