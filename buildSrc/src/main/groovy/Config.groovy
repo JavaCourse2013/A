@@ -43,7 +43,7 @@ class Config {
 
     static GUI_EX = [
             1: 1..4,
-            2: 2..4
+            2: 1..4
     ]
 
     static TOTAL
