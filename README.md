@@ -1,5 +1,8 @@
 # Java Course 2013 Team A
 
+- [解答状況 (list.html)](http://htmlpreview.github.io/?https://github.com/JavaCourse2013/A/blob/master/list.html)
+- [質問表 (Google SpreadSheets)](https://docs.google.com/spreadsheet/ccc?key=0Av7ifCZEYfJtdFpCdC1KZVdOTEJpdmtWVURGbjEzYnc)
+
 ## Summary
 
 このリポジトリでは、Javaコース参加者のリポジトリをsubmoduleとして束ねています。
@@ -16,7 +19,6 @@ $ git clone https://github.com/JavaCourse2013/A.git --recursive
 $ ./gradlew update
 ```
 
-解答状況は[list.html](http://htmlpreview.github.io/?https://github.com/JavaCourse2013/A/blob/master/list.html)にまとめられています。
 `list.html`は以下のコマンドで更新することができます。
 
 ```sh
@@ -27,14 +29,18 @@ $ ./gradlew list
 以下のディレクトリ構造で練習問題を配置してください。
 
 ```
-<master branch root>/
 JPL
-	chXX
-		exXX_XX		<- この中にソースコード
+	ch01
+		ex01_01		<- この中にソースコード
+		ex01_02		<- この中にソースコード
+		...
+	ch02
+		ex02_01		<- この中にソースコード
 		...
 	...
 GUI
 	1_1				<- この中にソースコードおよびJAR
+	1_2				<- この中にソースコードおよびJAR
 	...
 Interpret			<- この中に16章課題
 ```
@@ -43,10 +49,6 @@ Interpret			<- この中に16章課題
 インタフェース[Resolver](buildSrc/src/main/groovy/Resolver.groovy)を`YournameResolver`として実装してください。
 [DefaultResolver](buildSrc/src/main/groovy/DefaultResolver.groovy)が参考になります。
 実装は`buildSrc/src/main/custom-resolver/YournameResolver.groovy`として配置してください。
-
-## Questionnaire
-
-質問表は[こちら](https://docs.google.com/spreadsheet/ccc?key=0Av7ifCZEYfJtdFpCdC1KZVdOTEJpdmtWVURGbjEzYnc)にあります。
 
 ## Members
  * [watagashi78 (Hasegawa)](https://github.com/watagashi78)
