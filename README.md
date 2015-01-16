@@ -1,4 +1,4 @@
-# Java Course 2013 Team A
+# Java Training Course 20th
 
 - [解答状況 (list.html)](http://htmlpreview.github.io/?https://github.com/JavaCourse2013/A/blob/master/list.html)
 - [質問表 (Google SpreadSheets)](https://docs.google.com/spreadsheet/ccc?key=0Av7ifCZEYfJtdFpCdC1KZVdOTEJpdmtWVURGbjEzYnc)
