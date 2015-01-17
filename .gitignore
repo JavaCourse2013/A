@@ -66,10 +66,10 @@ Temporary Items
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-
 ### Gradle ###
 .gradle
 build/
+!gradle/wrapper/gradle-wrapper.jar
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -121,7 +121,6 @@ atlassian-ide-plugin.xml
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 
-
 ### Eclipse ###
 *.pydevproject
 .metadata
@@ -148,7 +147,7 @@ local.properties
 # PDT-specific
 .buildpath
 
-# sbteclipse plugin 
+# sbteclipse plugin
 .target
 
 # TeXlipse plugin

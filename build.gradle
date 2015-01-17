@@ -1,7 +1,3 @@
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.1'
-}
-
 task fetch(type: Exec) {
     workingDir projectDir
     commandLine 'git submodule foreach git fetch --all'.split(' ')
@@ -12,7 +8,7 @@ task update(type: Exec, dependsOn: fetch) {
     commandLine 'git submodule foreach git reset --hard origin/master'.split(' ')
 }
 
-task list << {
+task list(dependsOn: update) << {
     ProgressList progressList = new ProgressList(new File('main'))
     new File('list.html').write(progressList.html)
 }
