@@ -28,6 +28,3 @@
 [submodule "main/kamiya"]
 	path = main/kamiya
 	url = https://github.com/RyohKamiya/Java2013.git
-[submodule "main/hatanaka"]
-	path = main/hatanaka
-	url = https://github.com/zDpxq6/JPL2013.git
