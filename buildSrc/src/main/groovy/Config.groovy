@@ -3,14 +3,14 @@ class Config {
             'aruga',
             'haneda',
             'hasegawa',
-            'hatanaka',
             'hayashi',
             'kamiya',
             'kato',
             'kito',
             'nakamura',
             'shiro',
-            'sugimoto'
+            'sugimoto',
+            'tsuguka'
     ]
 
     static JPL_EX = [

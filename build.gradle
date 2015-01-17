@@ -8,7 +8,7 @@ task update(type: Exec, dependsOn: fetch) {
     commandLine 'git submodule foreach git reset --hard origin/master'.split(' ')
 }
 
-task list(dependsOn: update) << {
+task list() << {
     ProgressList progressList = new ProgressList(new File('main'))
     new File('list.html').write(progressList.html)
 }
