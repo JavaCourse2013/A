@@ -7,19 +7,19 @@
 
 このリポジトリでは、Javaコース参加者のリポジトリをsubmoduleとして束ねています。
 
-初回は以下のコマンドを実行してください。
+初回の取得は次のコマンドを実行してください。
 
 ```sh
 $ git clone https://github.com/JavaCourse2013/A.git --recursive
 ```
 
-サブモジュールを更新する場合は以下のコマンドを実行してください。
+サブモジュールの更新は次のコマンドを実行してください。
 
 ```sh
 $ ./gradlew update
 ```
 
-`list.html`は以下のコマンドで更新することができます。
+`list.html`の更新は次のコマンドを実行してください。
 
 ```sh
 $ ./gradlew list
